@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fafafa;
+            color: #333;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0px;
+        }
+
+        .header {
+            background: #fc8019;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .menu-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+        .main {
+            padding: 20px;
+        }
+
+        .main h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 26px;
+            color: #222;
+        }
+
+        .bbb {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        button {
+            background-color: #fc8019;
+            padding: 10px;
+            width: 150px;
+            margin-left: 20px;
+            align-content: center;
+            border-radius: 20px;
+            margin-bottom: 5px;
+        }
+
+        .item {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .item img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .item h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .item p {
+            font-size: 16px;
+            font-weight: bold;
+            color: #fc8019;
+        }
+
+
+        footer {
+            background-color: black;
+            color: aliceblue;
+            padding: 10px;
+            width: 100%;
+        }
+
+
+        .footers {
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .cc {
+            padding: 10px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 0px;
+            }
+
+            .aaa {
+                flex-direction: column;
+            }
+
+            .menu-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .item {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            body {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 0px;
+            }
+
+            .aaa {
+                flex-direction: column;
+            }
+
+            .menu-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .item {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">Swiggy</div>
+        <div class="menu-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Other</a>
+        </div>
+    </div>
+    <div class="aaa" style="background-color:tomato;">
+        <div>
+            <h2 style="font-size: 60px;color: rgb(6, 6, 10);flex-wrap: wrap;">Delicious Food,Delivered Fast 🍕</h2>
+            <p class="card" style="font-size: 35px;flex-wrap: wrap;">Order your favorite meals and get them delivered
+                right to your
+                doorsteps in minutes.</p>
+            <button> Order now</button>
+        </div>
+    </div>
+    <div class="main">
+        <h2>Our Popular Menu</h2>
+        <div class="bbb">
+            <div class="item">
+                <img src="pizza.jpg" alt="Pizza">
+                <h3>Delicious Pizza</h3>
+                <p>₹299</p>
+            </div>
+
+            <div class="item">
+                <img src="burger.jpg" alt="Burger">
+                <h3>Cheese Burger</h3>
+                <p>₹199</p>
+            </div>
+
+            <div class="item">
+                <img src="fries.jpg" alt="Fries">
+                <h3>Crispy Fries</h3>
+                <p>₹149</p>
+            </div>
+
+            <div class="item">
+                <img src="maggi.jpg" alt="Maggie">
+                <h3>Maggie</h3>
+                <p>₹129</p>
+            </div>
+
+            <div class="item">
+                <img src="icecream.jpg" alt="Ice Cream">
+                <h3>Ice Cream</h3>
+                <p>₹99</p>
+            </div>
+            <div class="item">
+                <img src="sand.jpg" alt="Sandwich">
+                <h3>Veg Sandwich</h3>
+                <p>₹159</p>
+            </div>
+
+            <div class="item">
+                <img src="pasta.jpg" alt="Pasta">
+                <h3>Italian Pasta</h3>
+                <p>₹179</p>
+            </div>
+
+            <div class="item">
+                <img src="nood.jpg" alt="Noodles">
+                <h3>Hakka Noodles</h3>
+                <p>₹139</p>
+            </div>
+
+            <div class="item">
+                <img src="bir.jpg" alt="Biryani">
+                <h3>Veg Biryani</h3>
+                <p>₹249</p>
+            </div>
+
+            <div class="item">
+                <img src="thali.jpg" alt="Thali">
+                <h3>Indian Thali</h3>
+                <p>₹199</p>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="footers">
+            <div class="cc">
+                <h4>About us</h4>
+                <p>We deliver delicious food to your doorsteps quickly and safely.</p>
+            </div>
+            <div class="cc">
+                <h4>Contact us</h4>
+                <p>Email: support@gmail.com</p>
+                <p>1800-8004-1232</p>
+            </div>
+            <div class="cc">
+                <h4>Follow us</h4>
+                <p>Instagram | Facebook | Twitter</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
